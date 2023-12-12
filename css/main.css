@@ -1,0 +1,77 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", 'Arial', 'sans-serif';
+    font-size: 18px;
+    line-height: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.container {
+    width: 1320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.item {
+    list-style: none;
+    width: 300px;
+    -webkit-box-shadow: -4px 4px 78px 58px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -4px 4px 78px 58px rgba(34, 60, 80, 0.2);
+    box-shadow: -4px 4px 78px 58px rgba(34, 60, 80, 0.2);
+    text-align: center;
+}
+
+.item:hover{
+    background-color: blanchedalmond;
+}
+
+.item:active{
+    background-color: rgb(181, 170, 154);
+}
+
+.text {
+    height: 100px;
+    width: 300px;
+    text-overflow: initial;
+    white-space: wrap;
+    overflow: scroll;
+}
